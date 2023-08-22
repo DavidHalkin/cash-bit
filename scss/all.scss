@@ -1,0 +1,36 @@
+@import "_assetsBootstrap";
+@import "partials/header";
+@import "partials/footer";
+
+body {
+	min-width: 320px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	.main {
+		flex: 1 0 auto;
+	}
+
+	.header,
+	.footer {
+		flex: 0 0 auto;
+	}
+}
+
+svg[class^="icon_"],
+svg[class*=" icon_"] {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor !important;
+	fill: currentColor !important;
+
+	path {
+		fill: currentColor !important;
+	}
+}
