@@ -1,7 +1,23 @@
 //bootstrap
 $success: #44BE4C;
-$primary: #07d3e2;
+$info: #07d3e2;
 $body-bg: #18162c;
 $body-color: #fff;
+$link-color: $info;
+$enable-negative-margins: true;
+
+$gradient: linear-gradient(180deg, rgba(#000, .35), rgba(#fff, 0));
+$input-border-color: transparent;
+$input-bg: darken($body-bg, 7%);
+$input-focus-bg: darken($body-bg, 5%);
+$input-focus-border-color: $info;
+$input-transition: border-color .5s ease-in-out, box-shadow .15s ease-in-out, background-color .5s ease-in-out;
+$input-focus-box-shadow: 0;
+
+$btn-close-opacity: .75;
+$btn-close-hover-opacity: .9;
+$btn-close-focus-shadow: 0;
+
+
 // custom
 $darkBg: #1D2730;
