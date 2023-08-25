@@ -72,14 +72,6 @@ svg[class*=" icon_"] {
 		gap: 10px;
 
 		.cash_logo {
-			--s: 50px;
-			width: var(--s);
-			flex: 0 0 var(--s);
-			height: var(--s);
-
-			@include media-breakpoint-down(sm) {
-				--s: 30px;
-			}
 
 			img {
 				display: block;
@@ -283,6 +275,7 @@ svg[class*=" icon_"] {
 .alert_info {
 	border-color: $info !important;
 	background: rgba($info, .14) !important;
+	backdrop-filter: blur(7px);
 
 	.ico {
 		--bs-text-opacity: .8;
@@ -291,4 +284,76 @@ svg[class*=" icon_"] {
 			transform: scale(-1, 1);
 		}
 	}
+}
+
+.cash_logo {
+	--s: 50px;
+	max-width: var(--s);
+	flex: 0 0 var(--s);
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	@include media-breakpoint-down(sm) {
+		--s: 30px;
+	}
+}
+
+.exchanges_info {
+	font-size: 14px;
+
+	.cash_logo {
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.panel_exchanges {
+	display: flex;
+
+	>.row {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+.word_wrap {
+	word-break: break-word;
+}
+
+.section_reserve {
+	background: #18253b;
+	overflow: hidden;
+
+	.bg {
+		z-index: 2;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 544px;
+			height: 500px;
+			right: 80%;
+			top: 0;
+			background: url(../images/htext.png) no-repeat;
+			z-index: -1;
+
+			@include media-breakpoint-down(xl) {
+				right: 50vw;
+
+				@include media-breakpoint-down(md) {
+					right: 0;
+				}
+			}
+		}
+	}
+
 }
