@@ -30,25 +30,14 @@
 									<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
 										<path fill="currentColor"
 											d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-									</svg><span class="ms-2 d-none d-sm-block"> info@cash-bit.com</span></a>
-								<ul class="list-unstyled d-flex align-items-center mb-0 list_user">
-									<li>
-										<a href="#" class="btn btn-link">
-											<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-												<path fill="currentColor"
-													d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-											</svg>
-											<span class="d-none d-md-block">Sign in</span> </a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-link">
-											<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
-												<path fill="currentColor"
-													d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H322.8c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7l40.3-40.3c-32.1-31-75.7-50.1-123.9-50.1H178.3zm435.5-68.3c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM375.9 417c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L576.1 358.7l-71-71L375.9 417z" />
-											</svg>
-											<span class="d-none d-md-block">Sign up</span></a>
-									</li>
-								</ul>
+									</svg><span class="ms-2 d-none d-sm-block"> info@cash-bit.com</span>
+								</a>
+								<a href="#" class="btn btn-link user_link" data-bs-toggle="modal" data-bs-target="#user">
+									<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+										<path fill="currentColor"
+											d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+									</svg>
+									<span class="d-none d-md-block">Sign in / Sign up</span> </a>
 								<div class="dropdown lang_menu lang_js">
 									<button
 										class="btn btn-link btn-sm dropdown-toggle text-uppercase text-decoration-none fw-bold "
@@ -336,7 +325,86 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Modal usser -->
+	<div class="modal fade" id="user" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered " style="max-width: 400px;">
+			<div class="modal-content">
+				<div class="modal-body">
+					<ul class="nav nav-underline justify-content-center gap-4" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="login-tab" data-bs-toggle="tab"
+								data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane"
+								aria-selected="true">Log-in</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="registration-tab" data-bs-toggle="tab"
+								data-bs-target="#registration-tab-pane" type="button" role="tab"
+								aria-controls="registration-tab-pane" aria-selected="false">Registration</button>
+						</li>
+					</ul>
+					<div class="tab-content pt-3" id="myTabContent">
+						<div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab"
+							tabindex="0">
+							<div class="mb-3">
+								<input type="email" class="form-control" id="email_info" placeholder="Email">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control " id="pass" placeholder="Password">
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="remember_data">
+								<label class="form-check-label user-select-none" for="remember_data"> Remember me. </label>
+							</div>
+							<div class="row align-items-center justify-content-between pt-2">
+								<div class="col-auto">
+									<a href="#" class="text-decoration-none" id="forgot-tab">Forgot password?</a>
+								</div>
+								<div class="col-auto">
+									<button type="button" class="btn btn-info px-4">Log in</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade " id="registration-tab-pane" role="tabpanel"
+							aria-labelledby="registration-tab" tabindex="0">
+							<div class="mb-3">
+								<input type="email" class="form-control" id="email_1" placeholder="Email">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control  is-invalid" id="pass1"
+									placeholder="ошбк валадиции? убери .is-invalid">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control " id="pass2" placeholder="Repeat Password">
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="ok_terms">
+								<label class="form-check-label user-select-none  lh-1" for="ok_terms">I read and agree with
+									<a href="#" target="_blank">the
+										terms and conditions</a> </label>
+							</div>
+							<div class="row align-items-center justify-content-center pt-3">
+								<div class="col-auto">
+									<button type="button" class="btn btn-info px-4">Registration</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade " id="forgot-tab-pane" role="tabpanel" aria-labelledby="forgot-tab"
+							tabindex="0">
+							<h6>Restore password</h6>
+							<div class="mb-3">
+								<input type="email" class="form-control" id="email_1" placeholder="Email">
+							</div>
+							<div class="row align-items-center justify-content-center pt-3">
+								<div class="col-auto">
+									<button type="button" class="btn btn-info px-4">Send me password</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>

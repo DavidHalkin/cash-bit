@@ -14,11 +14,11 @@
 		border-bottom: 1px solid #173046;
 		height: var(--header_hight);
 
-		@media screen and (max-width: 359px) {
-			svg {
-				height: 12px;
-			}
-		}
+		// @media screen and (max-width: 359px) {
+		// 	svg {
+		// 		height: 12px;
+		// 	}
+		// }
 
 	}
 
@@ -40,34 +40,20 @@
 		}
 	}
 
-	.list_user {
-		gap: 7px;
+	.user_link {
+		display: flex;
+		align-items: center;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
 
-		@include media-breakpoint-down(sm) {
-			gap: 0;
+		span {
+			margin-left: 6px;
 		}
 
-		li {
-			a {
-				display: flex;
-				align-items: center;
-				color: #fff;
-				text-decoration: none;
-				font-weight: 600;
-
-				span {
-					margin-left: 6px;
-				}
-
-				&:hover {
-					color: $info;
-				}
-
-
-			}
+		&:hover {
+			color: $info;
 		}
-
-
 	}
 
 	.lang_menu {
