@@ -4,7 +4,9 @@
 
 body {
 	min-width: 320px;
-	// background-image: url(../images/bg.png);
+	background-image: url(../images/bg.png);
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 
 .wrapper {
