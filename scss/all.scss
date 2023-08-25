@@ -36,6 +36,7 @@ svg[class*=" icon_"] {
 	}
 }
 
+
 .list_filter {
 	li {
 		a {
@@ -245,5 +246,49 @@ svg[class*=" icon_"] {
 
 	&.fade {
 		backdrop-filter: blur(4px);
+	}
+}
+
+.section_welcome {
+	background: #18253b;
+	overflow: hidden;
+
+	.bg {
+		position: relative;
+		z-index: 1;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 544px;
+			height: 500px;
+			left: 80%;
+			bottom: 0;
+			background: url(../images/htext.png) no-repeat;
+			z-index: -1;
+
+			@include media-breakpoint-down(lg) {
+				left: 50vw;
+			}
+
+			@include media-breakpoint-down(md) {
+				left: 10vw;
+				opacity: .4;
+			}
+		}
+	}
+}
+
+.alert_info {
+	border-color: $info !important;
+	background: rgba($info, .14) !important;
+
+	.ico {
+		--bs-text-opacity: .8;
+
+		svg {
+			transform: scale(-1, 1);
+		}
 	}
 }

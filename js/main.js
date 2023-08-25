@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	// open always first tab
-	const modalUser = document.getElementById("user");
+	const modalUser = document.getElementById("user_modal");
 	if (modalUser) {
 		const modal = new bootstrap.Modal(modalUser);
 		modal._element.addEventListener("show.bs.modal", function () {
