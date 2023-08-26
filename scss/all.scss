@@ -389,6 +389,13 @@ svg[class*=" icon_"] {
 	background: #18253b;
 	border-radius: 3px;
 	padding: 16px;
+
+	.panel_header {
+		background: #21314c;
+		margin: -16px -16px 0;
+		border-radius: 3px 3px 0 0;
+		padding: 16px;
+	}
 }
 
 .one_post {
