@@ -24,5 +24,11 @@ $nav-link-color: rgba($info, .5);
 $form-check-input-focus-box-shadow: 0;
 $form-check-input-checked-bg-color: $info;
 
+$pagination-hover-bg: $info;
+$pagination-hover-color: #fff;
+$pagination-active-bg: #174157;
+$pagination-active-border-color: $info;
+$pagination-disabled-bg: lighten(#174157, 60%);
+
 // custom
 $darkBg: #1D2730;

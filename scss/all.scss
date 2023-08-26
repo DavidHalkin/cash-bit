@@ -359,3 +359,58 @@ svg[class*=" icon_"] {
 	}
 
 }
+
+.alert_list {
+	.alert_info {
+		height: 100%;
+	}
+}
+
+.section_title {
+	background: #18253b;
+}
+
+.sidebar_part {
+	--s: 300px;
+	padding-top: 30px;
+
+	@include media-breakpoint-up(lg) {
+		max-width: var(--s) !important;
+		flex: 0 0 var(--s) !important;
+		padding-top: 0;
+	}
+}
+
+.fz_12 {
+	font-size: 12px;
+}
+
+.panel {
+	background: #18253b;
+	border-radius: 3px;
+	padding: 16px;
+}
+
+.one_post {
+	border-bottom: 1px solid #283750;
+	margin-bottom: 16px;
+
+	p {
+		font-size: 15px;
+	}
+
+	&:last-of-type {
+		border: 0;
+		margin-bottom: 0;
+	}
+
+	.footer_post {
+		padding-top: 10px;
+
+		.link_category {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+}
