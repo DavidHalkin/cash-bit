@@ -7,7 +7,8 @@
 	}
 
 	.footer_nav {
-		font-size: 20px;
+		// font-size: 20px;
+		padding-top: 20px;
 
 		@include media-breakpoint-down(sm) {
 			text-align: center;
@@ -18,47 +19,16 @@
 		}
 
 		li {
-			padding: 0 25px;
+			padding: 0 10px;
 			position: relative;
-
-
-
-			&:before {
-				content: "";
-				--s: 3px;
-				width: var(--s);
-				height: var(--s);
-				border-radius: 50%;
-				display: block;
-				position: absolute;
-				// top: 50%;
-				top: 0;
-				transform: translate(-100%, .8rem);
-
-				@include media-breakpoint-down(md) {
-					transform: translate(-100%, .55rem);
-				}
-
-				@include media-breakpoint-down(sm) {
-					position: static;
-					transform: none;
-					margin: 5px auto 0;
-				}
-
-				left: 0;
-				background: #fff;
-				margin-top: 3px;
-			}
-
-			&:first-child {
-				&:before {
-					content: none;
-				}
-			}
 
 			a {
 				text-decoration: none;
 			}
 		}
+	}
+
+	.copy {
+		font-size: 12px;
 	}
 }
