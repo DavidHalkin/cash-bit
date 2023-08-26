@@ -30,5 +30,14 @@ $pagination-active-bg: #174157;
 $pagination-active-border-color: $info;
 $pagination-disabled-bg: lighten(#174157, 60%);
 
+$list-group-bg: transparent;
+$list-group-hover-bg: $info;
+$list-group-active-bg: $info;
+$list-group-action-active-bg: lighten($info, 10%);
+$list-group-action-active-color: #fff;
+$list-group-action-hover-color: #fff;
+
+$input-disabled-bg: darken($info, 30%);
+
 // custom
 $darkBg: #1D2730;
