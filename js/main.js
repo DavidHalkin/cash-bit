@@ -1,6 +1,12 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
+	// select 
+	new lc_select('select[name="simple"]', {
+		wrap_width: '100%',
+		min_for_search: 3,
+		pre_placeh_opt: true,
+	});
 
 	// lang dropdown
 	const langDropdown = document.querySelector('.lang_js');
