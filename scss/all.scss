@@ -2,6 +2,7 @@
 @import "partials/header";
 @import "partials/footer";
 
+
 body {
 	min-width: 320px;
 	background-image: url(../images/bg.png);
@@ -385,6 +386,10 @@ svg[class*=" icon_"] {
 	font-size: 12px;
 }
 
+.fz_14 {
+	font-size: 14px;
+}
+
 .panel {
 	background: #18253b;
 	border-radius: 3px;
@@ -421,4 +426,8 @@ svg[class*=" icon_"] {
 			}
 		}
 	}
+}
+
+.w_short {
+	width: 140px !important;
 }
