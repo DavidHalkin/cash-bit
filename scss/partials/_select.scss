@@ -151,6 +151,7 @@ body .lcslt-search-li {
 	border: 1px solid #0b0a14 !important;
 	background: #0b0a14;
 	border-radius: 5px !important;
+	transition: all 0.3s ease;
 
 	&:focus {
 		border-color: $info !important;
