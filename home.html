@@ -13,6 +13,21 @@
 </head>
 
 <body>
+	<div class="alert_message bg-danger toast fade show mb-0" role="alert" aria-live="assertive" aria-atomic="true">
+		<div class="container-xl py-2 d-flex">
+			<div class="d-flex col px-3">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="alert_icon text-warning me-2">
+					<path
+						d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+					</path>
+				</svg>
+				<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi consequatur sint iusto
+					ipsa saepe. Ratione sit fugit beatae omnis cum, atque saepe alias voluptatum at ipsam aspernatur nobis
+					praesentium.</p>
+			</div>
+			<button type="button" class="btn-close text-white" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container-xl">
@@ -25,7 +40,8 @@
 						</svg><span class="ms-2 d-none d-sm-block"> info@cash-bit.com</span>
 					</a>
 					<strong class="logo">
-						<a href="#">cash-bit<img src="images/logo.png" alt="" class="img-fluid"></a>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#exchange_modal">cash-bit<img src="images/logo.png"
+								alt="" class="img-fluid"></a>
 					</strong>
 					<div class="etc_part d-flex align-items-center">
 						<a href="#" class="btn btn-link user_link" data-bs-toggle="modal" data-bs-target="#user_modal">
@@ -790,6 +806,50 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exchange_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header align-items-center">
+					<div class="d-flex align-items-center col">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="alert_icon text-danger me-2">
+							<path
+								d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+							</path>
+						</svg>
+						<p class="mb-0">Lorem <strong>ipsum dolo</strong>r, sit amet <strong>consectetur adipisicing</strong>
+							elit. consectetur adipisicing consectetur adipisicing</p>
+					</div>
+					<div class="close_icon ms-auto text-info" data-bs-dismiss="modal" aria-label="Close">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum architecto delectus eos voluptatem
+						quidem explicabo
+						repellendus maxime aperiam rerum, ratione <a href="#">labore cupiditate</a> consequuntur maiores magni
+						asperiores
+						nobis iure ea
+						dolore?</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aliquam fuga harum nam. Inventore
+						voluptatem,
+						quasi quae dolorem sapiente eum labore porro doloribus iste ducimus sit repellat illo, beatae
+						voluptas!</p>
+				</div>
+				<div class="modal-footer d-block">
+					<div class="d-grid">
+						<button type="button" class="btn btn-info" data-bs-dismiss="modal">Exchange</button>
+					</div>
+
 				</div>
 			</div>
 		</div>

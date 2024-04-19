@@ -432,3 +432,14 @@ svg[class*=" icon_"] {
 .w_short {
 	width: 140px !important;
 }
+.alert_icon,
+.close_icon {
+	--size: 20px;
+	max-width: var(--size);
+	flex: 0 0 var(--size);
+	fill: currentColor;
+}
+.modal-dialog .close_icon {
+	--size: 30px;
+	cursor: pointer;
+}
